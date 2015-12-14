@@ -35,6 +35,16 @@
 
 1.- Clic derecho sobre la clase App y seleccionar Run As -> Java application
 
+### Para ejecutar persona-web
+
+1.- Configuración del Tomcat
+- Dentro de la vista Servers clic en Add new Server
+- Seleccionar Apache Tomcat e indicar la carpeta donde se ha descomprimido y finalizar
+- Clic derecho sobre el Sevidor -> Add and Remove... Seleccionar el proyecto
+- Clic derecho sobre el Servidor -> Start
+
+2.- En el navegador ingresar: `http://localhost:8080/persona-web`. Clic en Persona y navegar por la aplicación.
+
 
 
 
