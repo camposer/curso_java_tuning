@@ -42,3 +42,7 @@
 	- http://blog.mattwoodward.com/2009/11/monitoring-tomcat-with-java-visualvm.html
 - Difference between sampling and profiling in jVisualvm
 	- http://stackoverflow.com/questions/12130107/difference-between-sampling-and-profiling-in-jvisualvm
+- PSI Probe
+	- https://github.com/psi-probe/psi-probe
+- MessAdmin
+	- http://messadmin.sourceforge.net/

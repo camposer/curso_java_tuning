@@ -29,9 +29,14 @@ public abstract class GenericDaoImpl<E, K> implements GenericDao<E, K> {
 
 	@Override
 	public void eliminar(K id) {
-		E entidad = obtener(id);
-		entityManager.remove(entidad);
-	}
+//		E entidad = obtener(id);
+//		entityManager.remove(entidad);
+        String jql = "delete from " + entidadClase.getSimpleName()
+	        + " t where t.id = " + id;
+	    javax.persistence.Query q = entityManager
+	            .createQuery(jql);
+	    q.executeUpdate();
+    }
 
 	@Override
 	public E obtener(K id) {
