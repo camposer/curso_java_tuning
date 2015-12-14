@@ -38,3 +38,5 @@
 	- http://www.ej-technologies.com/products/jprofiler/overview.html
 - Java 8: From PermGen to Metaspace 
 	- https://dzone.com/articles/java-8-permgen-metaspace
+- Monitoring Tomcat with Java VisualVM 
+	- http://blog.mattwoodward.com/2009/11/monitoring-tomcat-with-java-visualvm.html
