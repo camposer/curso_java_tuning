@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<script src="js/jquery.js"></script>
+		<script>
+			var obtenerTodos = function() {
+				var settings = { // Parámetros de configuración
+					type: 'GET',
+					dataType: 'json' // Tipo de dato de retorno
+				};
+
+				var ajax = $.ajax($('#url').val(), settings); // Petición AJAX
+
+				ajax.done(function(productos) { // Callback de respuesta
+					$("#respuesta").html(JSON.stringify(productos));
+				});
+			};
+
+			var obtener = function() {
+				var id = $("#param").val();
+
+				$.ajax($('#url').val() + "/" + id, {
+					type: 'GET',
+					dataType: 'json'
+				}).done(function(producto) {
+					$("#respuesta").html(JSON.stringify(producto));
+				});
+			};
+
+			var eliminar = function() {
+				var id = $("#param").val();
+
+				$.ajax($('#url').val() + "/" + id, {
+					type: 'DELETE'
+				}).done(function(producto) {
+					$("#respuesta").html("Elemento eliminado");
+				});
+			};
+
+			var agregar = function() {
+				var mensaje = $("#mensaje").val();
+				
+				$.ajax($('#url').val(), {
+					type: 'POST',
+					data: mensaje,
+					contentType: 'application/json' // Tipo de dato enviado
+				}).done(function(respuesta) {
+					$("#respuesta").html("Elemento agregado");
+				});
+			};
+
+			var modificar = function() {
+				var mensaje = $("#mensaje").val();
+				var id = $("#param").val();
+
+				$.ajax($('#url').val() + "/" + id, {
+					type: 'PUT',
+					data: mensaje,
+					contentType: 'application/json' // Tipo de dato enviado
+				}).done(function(respuesta) {
+					$("#respuesta").html("Elemento modificado");
+				});
+
+			};
+
+			$(document).ready(function() {
+				$("#obtenerTodos").click(obtenerTodos);
+				$("#obtener").click(obtener);
+				$("#eliminar").click(eliminar);
+				$("#agregar").click(agregar);
+				$("#modificar").click(modificar);
+			});
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>URL:</td>
+				<td>
+					 <input type="text" id="url" />
+				</td>
+			</tr>
+			<tr>
+				<td>Parámetro URL:</td>
+				<td>
+					 <input type="text" id="param" />
+				</td>
+			</tr>
+			<tr>
+				<td>Body petición:</td>
+				<td>
+					 <textarea id="mensaje" rows="10" cols="20"></textarea>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<input type="button" value="obtenerTodos" id="obtenerTodos"/>
+		<input type="button" value="obtener" id="obtener"/>
+		<input type="button" value="agregar" id="agregar"/>
+		<input type="button" value="modificar" id="modificar"/>
+		<input type="button" value="eliminar" id="eliminar"/>
+		<br><br>
+		<div id="respuesta">Respuesta...</div>
+	</body>
+</html>
