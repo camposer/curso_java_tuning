@@ -17,6 +17,12 @@
 - Principio de parsimonia
 - Mejores prácticas
 
+## Enfoque de Scott Oaks para probar una aplicación Real
+
+- Micro-benchmarking
+- Macro-benchmarking
+- Meso-benchmarking
+
 ## Recursos
 
 - Java Profiling 
@@ -46,3 +52,6 @@
 	- https://github.com/psi-probe/psi-probe
 - MessAdmin
 	- http://messadmin.sourceforge.net/
+- Java Virtual Machine Technology
+	- http://docs.oracle.com/javase/8/docs/technotes/guides/vm/index.html
+	- http://docs.oracle.com/javase/7/docs/technotes/guides/vm/index.html
