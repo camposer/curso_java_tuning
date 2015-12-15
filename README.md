@@ -27,13 +27,17 @@
 
 - Java Profiling 
 	- http://es.slideshare.net/zeroproductionincidents/java-profiling
-- Getting Started with the G1 Garbage Collector
-	- http://www.oracle.com/technetwork/tutorials/tutorials-1876574.html	
 - Java Garbage Collection - How it works 
 	- http://es.slideshare.net/MindfireSolutions/java-garbage-collection-how-it-works
+- Java Platform, Standard Edition HotSpot Virtual Machine Garbage Collection Tuning Guide
+	- https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/toc.htm
+- Getting Started with the G1 Garbage Collector
+	- http://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
 
 ## Enlaces
 
+- 17 best practices for Java performance engineering
+	- http://techbeacon.com/17-best-practices-java-performance-engineering
 - Open Source Profilers in Java
 	- http://java-source.net/open-source/profilers
 - 9 tools to help you with Java Performance Tuning
@@ -55,3 +59,9 @@
 - Java Virtual Machine Technology
 	- http://docs.oracle.com/javase/8/docs/technotes/guides/vm/index.html
 	- http://docs.oracle.com/javase/7/docs/technotes/guides/vm/index.html
+- Developer Productivity Report 2015: Java Performance Survey Results
+	- http://zeroturnaround.com/rebellabs/developer-productivity-report-2015-java-performance-survey-results/
+- Apache JMeter
+	- http://jmeter.apache.org/
+- Java Language Best Practices
+	- https://docs.oracle.com/cd/A97688_16/generic.903/bp/java.htm
