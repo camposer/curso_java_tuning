@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import dao.OrdenadorDao;
+import dao.Pagina;
 import dao.PersonaDao;
 import model.Ordenador;
 import model.Persona;
@@ -14,6 +15,8 @@ import model.Persona;
 @Service
 @Transactional
 public class PersonaServiceImpl implements PersonaService {
+	private static final int LIMIT = 20;
+	
 	@Autowired
 	private PersonaDao personaDao;
 	@Autowired
@@ -45,7 +48,10 @@ public class PersonaServiceImpl implements PersonaService {
 
 	@Override
 	public List<Persona> obtenerPersonas() {
-		return personaDao.obtenerTodos();
+//		return personaDao.obtenerTodos();
+		Pagina<Persona> pagina =
+				personaDao.obtenerTodos(0, LIMIT);
+		return pagina.getData();
 	}
 
 }

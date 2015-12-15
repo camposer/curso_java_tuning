@@ -39,10 +39,10 @@ public class PersonaServiceImpl implements PersonaService {
 
 	@Override
 	public List<Persona> obtenerPersonas() {
-		//return personaDao.obtenerTodos();
-		Pagina<Persona> pagina =
-				personaDao.obtenerTodos(0, LIMIT);
-		return pagina.getData();
+		return personaDao.obtenerTodos();
+//		Pagina<Persona> pagina =
+//				personaDao.obtenerTodos(0, LIMIT);
+//		return pagina.getData();
 	}
 
 }
