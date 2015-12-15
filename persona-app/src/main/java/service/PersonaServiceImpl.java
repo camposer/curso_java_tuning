@@ -6,12 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import dao.Pagina;
 import dao.PersonaDao;
 import model.Persona;
 
 @Service
 @Transactional
 public class PersonaServiceImpl implements PersonaService {
+	public static final int LIMIT = 20;
 	@Autowired
 	private PersonaDao personaDao;
 
@@ -37,7 +39,10 @@ public class PersonaServiceImpl implements PersonaService {
 
 	@Override
 	public List<Persona> obtenerPersonas() {
-		return personaDao.obtenerTodos();
+		//return personaDao.obtenerTodos();
+		Pagina<Persona> pagina =
+				personaDao.obtenerTodos(0, LIMIT);
+		return pagina.getData();
 	}
 
 }

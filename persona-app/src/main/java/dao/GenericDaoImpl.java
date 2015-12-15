@@ -8,8 +8,8 @@ import javax.persistence.PersistenceContext;
 
 public abstract class GenericDaoImpl<E, K> implements GenericDao<E, K> {
 	@PersistenceContext
-	private EntityManager entityManager;
-	private Class<E> entidadClase;
+	protected EntityManager entityManager;
+	protected Class<E> entidadClase;
 	
 	@SuppressWarnings("unchecked")
 	public GenericDaoImpl() {
