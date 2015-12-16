@@ -1,6 +1,6 @@
 # Ejercicio 3
 
-1.- Qué configuración de JVM (versión 8) recomienda para el proyecto `proyecto-web`. Al menos proponer:
+1.- Qué configuración de JVM (versión 8) recomienda para el proyecto `proyecto-app`. Al menos proponer:
 - Tamaños de Heap (considerando sus regiones) y Stack
 - Implementación de GC
 

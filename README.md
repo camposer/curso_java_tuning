@@ -30,9 +30,11 @@
 - Java Garbage Collection - How it works 
 	- http://es.slideshare.net/MindfireSolutions/java-garbage-collection-how-it-works
 - Java Platform, Standard Edition HotSpot Virtual Machine Garbage Collection Tuning Guide
-	- https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/toc.htm
+	- https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/
 - Getting Started with the G1 Garbage Collector
 	- http://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
+- Java Command Reference
+	- https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html#CBBFHAJA
 
 ## Enlaces
 
